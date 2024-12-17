@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin: "https://food-app-yt.onrender.com",
+    origin: "http://localhost:5173/", // change after online upload
     credentials: true
 }
 app.use(cors(corsOptions));
